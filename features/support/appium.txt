@@ -1,0 +1,24 @@
+[caps]
+# 模拟器
+platformName = "ios"
+deviceName = "iPhone X"
+platformVersion = "11.2"
+app = "./apps/AutoUITestDemo.app"
+automationName = "XCUITest"
+#noReset="true"
+
+# 真机
+# platformName = "ios"
+# deviceName = "xxx"
+# platformVersion = "10.3.3"
+# app = "./apps/AutoUITestDemo.app"
+# automationName = "XCUITest"
+# udid = "xxxx"
+# xcodeOrgId = "QT6N53BFV6"
+# xcodeSigningId = "ZHH59G3WE3"
+# autoAcceptAlerts = "true"  
+# waitForAppScript = "$.delay(5000); $.acceptAlert();" # 处理系统弹窗
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
