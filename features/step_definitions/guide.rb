@@ -25,7 +25,7 @@ def swipe_to_last_guide_view
     puts guideExist ? "存在引导页面" : "不存在引导页面" 
     if guideExist
       swipe_to_last_guide_view
-      sleep(1)
+      sleep(2)
       button("Guide_Start_Btn").click
       sleep(0.25)
     end
@@ -44,7 +44,7 @@ end
 
 Then(/^滑动到最后一页$/) do
     swipe_to_last_guide_view
-    sleep(1)
+    sleep(2)
 end
 
 Then(/^展示“登录\/注册”和“进入首页”两个按钮$/) do
@@ -59,8 +59,7 @@ end
 
 When(/^点击“登录\/注册”按钮$/) do
     if $loginBtnIsExist
-        button("Guide_Login_Btn").click
-        
+        button("Guide_Login_Btn").click 
     else 
         puts "已登录"
     end
